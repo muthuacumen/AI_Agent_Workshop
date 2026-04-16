@@ -41,5 +41,5 @@ Day two is a hands-on lab where students apply Day 1 concepts to a real-world ci
 ## 🚀 Getting Started
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/ProfEspinosaAIML/AI_Agent_Workshop.git](https://github.com/your-username/AI_Agent_Workshop.git)
+   git clone https://github.com/ProfEspinosaAIML/AI_Agent_Workshop.git
    cd AI_Agent_Workshop
