@@ -1,0 +1,9 @@
+question,expected_service_name,expected_jurisdiction_level,expected_responsible_body
+Who do I contact about garbage pickup?,garbage pickup,Region,Region of Waterloo Waste Management
+Is childcare a city or provincial service?,child care subsidies,Province,Government of Ontario
+Who handles my property tax bill in Kitchener?,property tax billing,City,City of Kitchener Revenue Division
+How do I renew my driver's licence?,drivers licence renewal,Province,Government of Ontario / ServiceOntario
+Where do I apply for EI?,employment insurance,Federal,Government of Canada
+I found a pothole on my street. Who fixes it?,road pothole on local street,City,City of Kitchener Transportation Services
+Who clears snow on regional roads?,snow removal on regional roads,Region,Region of Waterloo Transportation Services
+Who do I call about restaurant inspections?,public health inspections,Region,Region of Waterloo Public Health
