@@ -1,0 +1,32 @@
+stages:
+  prepare_data:
+    cmd: python scripts/prepare_data.py
+    deps:
+      - scripts/prepare_data.py
+      - data/service_catalog.csv
+    outs:
+      - artifacts/service_catalog.cleaned.json
+
+  run_agent_eval:
+    cmd: python scripts/run_agent_eval.py
+    deps:
+      - scripts/run_agent_eval.py
+      - eval/service_eval_set.csv
+      - artifacts/service_catalog.cleaned.json
+    params:
+      - retrieval.top_k
+      - agent.model_name
+      - agent.use_tool_calling
+      - evaluation.max_examples
+    outs:
+      - artifacts/eval_predictions.json
+    metrics:
+      - artifacts/metrics.json
+
+  report_metrics:
+    cmd: python scripts/report_metrics.py
+    deps:
+      - scripts/report_metrics.py
+      - artifacts/metrics.json
+    outs:
+      - artifacts/metrics_report.md
