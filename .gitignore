@@ -1,0 +1,49 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.env/
+
+# ── Environment variables / secrets ───────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.secret
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ── DVC ───────────────────────────────────────────────────────────────────────
+/tmp/
+.dvc/tmp/
+.dvc/cache/
+
+# ── Artifacts (generated outputs — tracked by DVC, not Git) ───────────────────
+artifacts/*.json
+artifacts/*.md
+artifacts/*.csv
+# Keep .gitkeep so the folder exists in Git
+!artifacts/.gitkeep
+
+# ── Personal study notes — NOT for submission ──────────────────────────────────
+TeachMuthu.md
+
+# ── OS / Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/settings.json
+*.swp
+*.swo
